@@ -1,0 +1,209 @@
+{
+  "args": {
+    "archs": [
+      "cnn"
+    ],
+    "seeds": [
+      0
+    ],
+    "n_random_splits": 1,
+    "n_unknown": 4,
+    "n_train": 60,
+    "n_val": 20,
+    "n_test": 40,
+    "epochs": 3,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "width": 32,
+    "train_snrs": [
+      10,
+      20,
+      30,
+      40
+    ],
+    "test_snrs": [
+      10.0,
+      30.0
+    ],
+    "data_seed": 0,
+    "out": "results",
+    "data_dir": "data_cache",
+    "device": "auto",
+    "fresh": false,
+    "quick": true,
+    "verbose": false
+  },
+  "versions": {
+    "pqd_openset": "1.0.0",
+    "python": "3.13.1",
+    "numpy": "2.2.6",
+    "torch": "2.10.0+cpu",
+    "sklearn": "1.8.0"
+  },
+  "signal": {
+    "fs_hz": 3200,
+    "f0_hz": 50.0,
+    "samples": 640
+  },
+  "classes": [
+    "normal",
+    "sag",
+    "swell",
+    "interruption",
+    "harmonics",
+    "osc_transient",
+    "notch",
+    "spike",
+    "flicker",
+    "sag_harm",
+    "swell_harm",
+    "flicker_harm",
+    "sag_osc",
+    "swell_osc",
+    "flicker_sag",
+    "harm_osc"
+  ],
+  "splits": [
+    {
+      "name": "random0",
+      "type": "random",
+      "known": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        15
+      ],
+      "unknown": [
+        6,
+        12,
+        13,
+        14
+      ],
+      "novel_components": [
+        "notch"
+      ],
+      "known_names": [
+        "normal",
+        "sag",
+        "swell",
+        "interruption",
+        "harmonics",
+        "osc_transient",
+        "spike",
+        "flicker",
+        "sag_harm",
+        "swell_harm",
+        "flicker_harm",
+        "harm_osc"
+      ],
+      "unknown_names": [
+        "notch",
+        "sag_osc",
+        "swell_osc",
+        "flicker_sag"
+      ]
+    },
+    {
+      "name": "near",
+      "type": "near",
+      "known": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        14,
+        15
+      ],
+      "unknown": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "novel_components": [],
+      "known_names": [
+        "normal",
+        "sag",
+        "swell",
+        "interruption",
+        "harmonics",
+        "osc_transient",
+        "notch",
+        "spike",
+        "flicker",
+        "flicker_harm",
+        "flicker_sag",
+        "harm_osc"
+      ],
+      "unknown_names": [
+        "sag_harm",
+        "swell_harm",
+        "sag_osc",
+        "swell_osc"
+      ]
+    },
+    {
+      "name": "far",
+      "type": "far",
+      "known": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        12,
+        13,
+        15
+      ],
+      "unknown": [
+        6,
+        8,
+        11,
+        14
+      ],
+      "novel_components": [
+        "flicker",
+        "notch"
+      ],
+      "known_names": [
+        "normal",
+        "sag",
+        "swell",
+        "interruption",
+        "harmonics",
+        "osc_transient",
+        "spike",
+        "sag_harm",
+        "swell_harm",
+        "sag_osc",
+        "swell_osc",
+        "harm_osc"
+      ],
+      "unknown_names": [
+        "notch",
+        "flicker",
+        "flicker_harm",
+        "flicker_sag"
+      ]
+    }
+  ]
+}

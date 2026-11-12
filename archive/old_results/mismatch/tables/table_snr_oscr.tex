@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{OSCR versus test SNR.}
+\label{tab:table_snr_oscr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llcccc}
+\toprule
+arch & method & 10 dB & 20 dB & 30 dB & 40 dB \\
+\midrule
+cnn & Energy & 0.136 $\pm$ 0.040 & 0.390 $\pm$ 0.119 & 0.583 $\pm$ 0.170 & 0.583 $\pm$ 0.159 \\
+cnn & MSP & 0.118 $\pm$ 0.034 & 0.433 $\pm$ 0.105 & 0.715 $\pm$ 0.090 & 0.700 $\pm$ 0.075 \\
+cnn & Mahalanobis & 0.077 $\pm$ 0.021 & 0.323 $\pm$ 0.063 & 0.692 $\pm$ 0.073 & 0.674 $\pm$ 0.063 \\
+cnn & OCSVM-deep & -- & -- & -- & -- \\
+cnn & OCSVM-hand & -- & -- & -- & -- \\
+cnn & OpenMax & 0.055 $\pm$ 0.016 & 0.454 $\pm$ 0.045 & 0.796 $\pm$ 0.010 & 0.766 $\pm$ 0.011 \\
+resnet & Energy & 0.101 $\pm$ 0.031 & 0.324 $\pm$ 0.103 & 0.562 $\pm$ 0.172 & 0.564 $\pm$ 0.157 \\
+resnet & MSP & 0.084 $\pm$ 0.019 & 0.328 $\pm$ 0.083 & 0.711 $\pm$ 0.098 & 0.699 $\pm$ 0.085 \\
+resnet & Mahalanobis & 0.063 $\pm$ 0.015 & 0.248 $\pm$ 0.046 & 0.665 $\pm$ 0.061 & 0.653 $\pm$ 0.060 \\
+resnet & OCSVM-deep & -- & -- & -- & -- \\
+resnet & OCSVM-hand & -- & -- & -- & -- \\
+resnet & OpenMax & 0.048 $\pm$ 0.016 & 0.312 $\pm$ 0.053 & 0.793 $\pm$ 0.010 & 0.747 $\pm$ 0.022 \\
+\bottomrule
+\end{tabular}}
+\end{table}

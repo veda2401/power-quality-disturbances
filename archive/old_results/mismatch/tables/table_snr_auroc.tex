@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{AUROC versus test SNR.}
+\label{tab:table_snr_auroc}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llcccc}
+\toprule
+arch & method & 10 dB & 20 dB & 30 dB & 40 dB \\
+\midrule
+cnn & Energy & 0.543 $\pm$ 0.086 & 0.561 $\pm$ 0.191 & 0.609 $\pm$ 0.182 & 0.611 $\pm$ 0.169 \\
+cnn & MSP & 0.530 $\pm$ 0.084 & 0.608 $\pm$ 0.135 & 0.736 $\pm$ 0.097 & 0.721 $\pm$ 0.080 \\
+cnn & Mahalanobis & 0.508 $\pm$ 0.050 & 0.635 $\pm$ 0.117 & 0.736 $\pm$ 0.080 & 0.724 $\pm$ 0.072 \\
+cnn & OCSVM-deep & 0.510 $\pm$ 0.084 & 0.593 $\pm$ 0.207 & 0.636 $\pm$ 0.162 & 0.641 $\pm$ 0.116 \\
+cnn & OCSVM-hand & 0.585 $\pm$ 0.027 & 0.617 $\pm$ 0.138 & 0.590 $\pm$ 0.047 & 0.584 $\pm$ 0.062 \\
+cnn & OpenMax & 0.497 $\pm$ 0.134 & 0.727 $\pm$ 0.086 & 0.854 $\pm$ 0.010 & 0.829 $\pm$ 0.020 \\
+resnet & Energy & 0.532 $\pm$ 0.082 & 0.523 $\pm$ 0.194 & 0.591 $\pm$ 0.187 & 0.590 $\pm$ 0.172 \\
+resnet & MSP & 0.509 $\pm$ 0.057 & 0.559 $\pm$ 0.126 & 0.734 $\pm$ 0.106 & 0.720 $\pm$ 0.093 \\
+resnet & Mahalanobis & 0.527 $\pm$ 0.070 & 0.636 $\pm$ 0.106 & 0.712 $\pm$ 0.069 & 0.697 $\pm$ 0.067 \\
+resnet & OCSVM-deep & 0.517 $\pm$ 0.072 & 0.549 $\pm$ 0.182 & 0.613 $\pm$ 0.117 & 0.617 $\pm$ 0.070 \\
+resnet & OCSVM-hand & 0.585 $\pm$ 0.027 & 0.617 $\pm$ 0.138 & 0.590 $\pm$ 0.047 & 0.584 $\pm$ 0.062 \\
+resnet & OpenMax & 0.469 $\pm$ 0.111 & 0.678 $\pm$ 0.084 & 0.860 $\pm$ 0.020 & 0.828 $\pm$ 0.025 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,17 @@
+id,class,components
+0,normal,-
+1,sag,sag
+2,swell,swell
+3,interruption,interruption
+4,harmonics,harm
+5,osc_transient,osc
+6,notch,notch
+7,spike,spike
+8,flicker,flicker
+9,sag_harm,harm + sag
+10,swell_harm,harm + swell
+11,flicker_harm,flicker + harm
+12,sag_osc,osc + sag
+13,swell_osc,osc + swell
+14,flicker_sag,flicker + sag
+15,harm_osc,harm + osc

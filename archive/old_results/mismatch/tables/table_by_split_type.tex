@@ -1,0 +1,48 @@
+\begin{table}[t]
+\centering
+\caption{Results by split type at the matched SNR.}
+\label{tab:table_by_split_type}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllcccc}
+\toprule
+arch & split\_type & method & AUROC & FPR95 & OSCR & URR \\
+\midrule
+cnn & random & MSP & 0.751 $\pm$ 0.018 & 0.749 $\pm$ 0.005 & 0.733 $\pm$ 0.017 & 0.302 $\pm$ 0.004 \\
+cnn & near & MSP & 0.621 $\pm$ 0.016 & 0.881 $\pm$ 0.019 & 0.607 $\pm$ 0.015 & 0.182 $\pm$ 0.007 \\
+cnn & far & MSP & 0.836 $\pm$ 0.003 & 0.571 $\pm$ 0.044 & 0.804 $\pm$ 0.000 & 0.489 $\pm$ 0.002 \\
+cnn & random & Energy & 0.585 $\pm$ 0.031 & 0.724 $\pm$ 0.012 & 0.565 $\pm$ 0.030 & 0.274 $\pm$ 0.012 \\
+cnn & near & Energy & 0.419 $\pm$ 0.005 & 0.990 $\pm$ 0.014 & 0.403 $\pm$ 0.005 & 0.013 $\pm$ 0.018 \\
+cnn & far & Energy & 0.822 $\pm$ 0.002 & 0.482 $\pm$ 0.004 & 0.780 $\pm$ 0.006 & 0.504 $\pm$ 0.012 \\
+cnn & random & Mahalanobis & 0.719 $\pm$ 0.025 & 0.775 $\pm$ 0.028 & 0.682 $\pm$ 0.024 & 0.213 $\pm$ 0.021 \\
+cnn & near & Mahalanobis & 0.831 $\pm$ 0.021 & 0.698 $\pm$ 0.064 & 0.778 $\pm$ 0.018 & 0.279 $\pm$ 0.062 \\
+cnn & far & Mahalanobis & 0.658 $\pm$ 0.013 & 0.828 $\pm$ 0.025 & 0.618 $\pm$ 0.008 & 0.166 $\pm$ 0.009 \\
+cnn & random & OpenMax & 0.858 $\pm$ 0.001 & 0.616 $\pm$ 0.009 & 0.805 $\pm$ 0.000 & 0.416 $\pm$ 0.009 \\
+cnn & near & OpenMax & 0.858 $\pm$ 0.014 & 0.345 $\pm$ 0.011 & 0.788 $\pm$ 0.010 & 0.674 $\pm$ 0.030 \\
+cnn & far & OpenMax & 0.847 $\pm$ 0.012 & 0.698 $\pm$ 0.007 & 0.795 $\pm$ 0.010 & 0.222 $\pm$ 0.099 \\
+cnn & random & OCSVM-deep & 0.651 $\pm$ 0.012 & 0.748 $\pm$ 0.032 & -- & 0.259 $\pm$ 0.034 \\
+cnn & near & OCSVM-deep & 0.808 $\pm$ 0.011 & 0.436 $\pm$ 0.023 & -- & 0.569 $\pm$ 0.016 \\
+cnn & far & OCSVM-deep & 0.448 $\pm$ 0.024 & 0.925 $\pm$ 0.014 & -- & 0.070 $\pm$ 0.018 \\
+cnn & random & OCSVM-hand & 0.564 $\pm$ 0.006 & 0.679 $\pm$ 0.002 & -- & 0.314 $\pm$ 0.005 \\
+cnn & near & OCSVM-hand & 0.650 $\pm$ 0.001 & 0.634 $\pm$ 0.005 & -- & 0.364 $\pm$ 0.002 \\
+cnn & far & OCSVM-hand & 0.556 $\pm$ 0.005 & 0.784 $\pm$ 0.002 & -- & 0.216 $\pm$ 0.002 \\
+resnet & random & MSP & 0.762 $\pm$ 0.045 & 0.812 $\pm$ 0.099 & 0.742 $\pm$ 0.042 & 0.211 $\pm$ 0.083 \\
+resnet & near & MSP & 0.607 $\pm$ 0.005 & 0.874 $\pm$ 0.037 & 0.591 $\pm$ 0.003 & 0.122 $\pm$ 0.053 \\
+resnet & far & MSP & 0.834 $\pm$ 0.010 & 0.653 $\pm$ 0.011 & 0.799 $\pm$ 0.007 & 0.410 $\pm$ 0.021 \\
+resnet & random & Energy & 0.561 $\pm$ 0.026 & 0.768 $\pm$ 0.018 & 0.542 $\pm$ 0.029 & 0.235 $\pm$ 0.014 \\
+resnet & near & Energy & 0.399 $\pm$ 0.045 & 0.998 $\pm$ 0.004 & 0.382 $\pm$ 0.039 & 0.006 $\pm$ 0.002 \\
+resnet & far & Energy & 0.812 $\pm$ 0.007 & 0.580 $\pm$ 0.028 & 0.762 $\pm$ 0.002 & 0.436 $\pm$ 0.041 \\
+resnet & random & Mahalanobis & 0.672 $\pm$ 0.002 & 0.871 $\pm$ 0.016 & 0.635 $\pm$ 0.006 & 0.115 $\pm$ 0.007 \\
+resnet & near & Mahalanobis & 0.799 $\pm$ 0.022 & 0.835 $\pm$ 0.053 & 0.740 $\pm$ 0.024 & 0.161 $\pm$ 0.062 \\
+resnet & far & Mahalanobis & 0.666 $\pm$ 0.024 & 0.907 $\pm$ 0.035 & 0.619 $\pm$ 0.023 & 0.080 $\pm$ 0.046 \\
+resnet & random & OpenMax & 0.841 $\pm$ 0.008 & 0.575 $\pm$ 0.035 & 0.782 $\pm$ 0.004 & 0.436 $\pm$ 0.009 \\
+resnet & near & OpenMax & 0.872 $\pm$ 0.026 & 0.350 $\pm$ 0.007 & 0.796 $\pm$ 0.013 & 0.650 $\pm$ 0.011 \\
+resnet & far & OpenMax & 0.867 $\pm$ 0.011 & 0.597 $\pm$ 0.039 & 0.800 $\pm$ 0.004 & 0.399 $\pm$ 0.062 \\
+resnet & random & OCSVM-deep & 0.605 $\pm$ 0.020 & 0.821 $\pm$ 0.027 & -- & 0.175 $\pm$ 0.014 \\
+resnet & near & OCSVM-deep & 0.746 $\pm$ 0.007 & 0.561 $\pm$ 0.009 & -- & 0.426 $\pm$ 0.009 \\
+resnet & far & OCSVM-deep & 0.488 $\pm$ 0.037 & 0.958 $\pm$ 0.028 & -- & 0.036 $\pm$ 0.037 \\
+resnet & random & OCSVM-hand & 0.564 $\pm$ 0.006 & 0.679 $\pm$ 0.002 & -- & 0.314 $\pm$ 0.005 \\
+resnet & near & OCSVM-hand & 0.650 $\pm$ 0.001 & 0.634 $\pm$ 0.005 & -- & 0.364 $\pm$ 0.002 \\
+resnet & far & OCSVM-hand & 0.556 $\pm$ 0.005 & 0.784 $\pm$ 0.002 & -- & 0.216 $\pm$ 0.002 \\
+\bottomrule
+\end{tabular}}
+\end{table}

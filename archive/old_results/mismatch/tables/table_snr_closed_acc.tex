@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Closed acc. versus test SNR.}
+\label{tab:table_snr_closed_acc}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llcccc}
+\toprule
+arch & method & 10 dB & 20 dB & 30 dB & 40 dB \\
+\midrule
+cnn & Energy & 0.173 $\pm$ 0.040 & 0.571 $\pm$ 0.065 & 0.940 $\pm$ 0.005 & 0.932 $\pm$ 0.006 \\
+cnn & MSP & 0.173 $\pm$ 0.040 & 0.571 $\pm$ 0.065 & 0.940 $\pm$ 0.005 & 0.932 $\pm$ 0.006 \\
+cnn & Mahalanobis & 0.173 $\pm$ 0.040 & 0.571 $\pm$ 0.065 & 0.940 $\pm$ 0.005 & 0.932 $\pm$ 0.006 \\
+cnn & OCSVM-deep & -- & -- & -- & -- \\
+cnn & OCSVM-hand & -- & -- & -- & -- \\
+cnn & OpenMax & 0.125 $\pm$ 0.026 & 0.539 $\pm$ 0.061 & 0.913 $\pm$ 0.005 & 0.892 $\pm$ 0.008 \\
+resnet & Energy & 0.136 $\pm$ 0.037 & 0.475 $\pm$ 0.050 & 0.927 $\pm$ 0.008 & 0.930 $\pm$ 0.006 \\
+resnet & MSP & 0.136 $\pm$ 0.037 & 0.475 $\pm$ 0.050 & 0.927 $\pm$ 0.008 & 0.930 $\pm$ 0.006 \\
+resnet & Mahalanobis & 0.136 $\pm$ 0.037 & 0.475 $\pm$ 0.050 & 0.927 $\pm$ 0.008 & 0.930 $\pm$ 0.006 \\
+resnet & OCSVM-deep & -- & -- & -- & -- \\
+resnet & OCSVM-hand & -- & -- & -- & -- \\
+resnet & OpenMax & 0.118 $\pm$ 0.027 & 0.403 $\pm$ 0.059 & 0.901 $\pm$ 0.010 & 0.859 $\pm$ 0.032 \\
+\bottomrule
+\end{tabular}}
+\end{table}

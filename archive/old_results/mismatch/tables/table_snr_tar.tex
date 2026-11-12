@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Known acceptance rate at the fixed (validation) threshold versus test SNR.}
+\label{tab:table_snr_tar}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llcccc}
+\toprule
+arch & method & 10 dB & 20 dB & 30 dB & 40 dB \\
+\midrule
+cnn & Energy & 0.995 $\pm$ 0.005 & 0.713 $\pm$ 0.075 & 0.948 $\pm$ 0.005 & 0.956 $\pm$ 0.009 \\
+cnn & MSP & 0.787 $\pm$ 0.179 & 0.606 $\pm$ 0.078 & 0.932 $\pm$ 0.009 & 0.936 $\pm$ 0.009 \\
+cnn & Mahalanobis & 0.000 $\pm$ 0.000 & 0.485 $\pm$ 0.205 & 0.956 $\pm$ 0.006 & 0.938 $\pm$ 0.008 \\
+cnn & OCSVM-deep & 0.000 $\pm$ 0.000 & 0.792 $\pm$ 0.239 & 0.951 $\pm$ 0.008 & 0.766 $\pm$ 0.029 \\
+cnn & OCSVM-hand & 0.000 $\pm$ 0.000 & 0.656 $\pm$ 0.046 & 0.952 $\pm$ 0.006 & 0.793 $\pm$ 0.013 \\
+cnn & OpenMax & 0.544 $\pm$ 0.418 & 0.852 $\pm$ 0.113 & 0.947 $\pm$ 0.010 & 0.915 $\pm$ 0.011 \\
+resnet & Energy & 1.000 $\pm$ 0.000 & 0.792 $\pm$ 0.091 & 0.938 $\pm$ 0.011 & 0.951 $\pm$ 0.010 \\
+resnet & MSP & 0.944 $\pm$ 0.033 & 0.734 $\pm$ 0.054 & 0.942 $\pm$ 0.010 & 0.944 $\pm$ 0.005 \\
+resnet & Mahalanobis & 0.000 $\pm$ 0.000 & 0.776 $\pm$ 0.087 & 0.954 $\pm$ 0.006 & 0.941 $\pm$ 0.007 \\
+resnet & OCSVM-deep & 0.000 $\pm$ 0.000 & 0.841 $\pm$ 0.173 & 0.955 $\pm$ 0.008 & 0.748 $\pm$ 0.019 \\
+resnet & OCSVM-hand & 0.000 $\pm$ 0.000 & 0.656 $\pm$ 0.046 & 0.952 $\pm$ 0.006 & 0.793 $\pm$ 0.013 \\
+resnet & OpenMax & 0.496 $\pm$ 0.390 & 0.829 $\pm$ 0.113 & 0.946 $\pm$ 0.009 & 0.881 $\pm$ 0.023 \\
+\bottomrule
+\end{tabular}}
+\end{table}
